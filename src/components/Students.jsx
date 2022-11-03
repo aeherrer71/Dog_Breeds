@@ -31,12 +31,18 @@ function Students() {
 console.log(breeds)
   return (
 
-    <div>
-      <h1>Dog Breeds</h1>
+    <div className='dogCard'>
       {breeds.map((dogData) => (
-        <div>
-        <img src={dogData.img} alt="dog image"/> 
-        </div>
+        <>
+          
+         <div className='card'>
+          <img src={dogData.img} alt="dog breed" key={dogData._id} /> 
+           <div className="container">
+            <h3> {dogData.breed}</h3>
+            <p>Origin: {dogData.origin}</p>
+            </div>
+            </div>
+      </>
       )
       )
       }

@@ -3,7 +3,9 @@ import Students from './components/Students'
 
 function App() {
   return (
-    <div>
+    <div className='superContainer'>
+      <h1>Dog Breeds</h1>
+
       <Students />
     </div>
   )
